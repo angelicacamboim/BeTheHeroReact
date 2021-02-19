@@ -1,6 +1,10 @@
 const connection = require('../database/connection')
 
 module.exports = {
+    //lista todos os incidentes das ONGs
+    //contador de página 5 a 5 registros
+    //exibe o total de paginas no response do header
+
     async listAllOngsIncidents (request, response){ 
         const{ page = 1 } = request.query
 
@@ -18,6 +22,7 @@ module.exports = {
         return response.json({incidents})
     },
 
+    //lista somente os incidentes de uma ONG
     async listSpecificOngIncidents (request, response){ 
         const ong_id = request.headers.authorization
 
@@ -29,6 +34,7 @@ module.exports = {
         return response.json({incidents})
     },
 
+    //Criar incidentes para a ONG
     async create(request, response){
         const { title, description, value} = request.body
         const ong_id = request.headers.authorization
@@ -44,6 +50,7 @@ module.exports = {
         return response.json({id})
     },
 
+    //deleta o incidente
     async delete(request, response){
         const {id} = request.params
         const ong_id = request.headers.authorization

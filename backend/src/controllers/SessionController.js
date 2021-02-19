@@ -1,6 +1,7 @@
 const connection = require('../database/connection')
 
 module.exports = {
+    //acessar o sistema com o id da ong
     async create(request, response){
         const { id } = request.body
         
