@@ -23,7 +23,7 @@ button {
 }
 
 form input {
-    width: 351px;
+    width: 448px;
     height: 60px;
     color: #333;
     border-radius: 8px;
@@ -32,7 +32,7 @@ form input {
 }
 
 .button {
-    width: 351px;
+    width: 448px;
     height: 60px;
     background: #e02041;
     border: 0;
@@ -50,4 +50,24 @@ form input {
 
 .button:hover {
     filter: brightness(90%)
+}
+
+.back-link{
+    color: #41414D;
+    display:flex;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.back-link svg{
+    margin-right: 8px;
+    color: #e02041;
+}
+
+.back-link:hover{
+    opacity: 0.8;
 }

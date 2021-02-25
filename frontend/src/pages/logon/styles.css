@@ -12,8 +12,9 @@
 
 .logon-container section.form {
     width: 100%;
-    max-width: 350;
-   margin-right: 30px;
+    max-width: 450px;
+   margin-right: 60px;
+  
 }
 
 .logon-container section.form form {
@@ -27,22 +28,3 @@
     margin-bottom: 32px;
 }
 
-.logon-container section.form form a{
-    color: #41414D;
-    display:flex;
-    align-items: center;
-    margin-top: 40px;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: opacity 0.2s;
-}
-
-.logon-container section.form form a svg{
-    margin-right: 8px;
-    color: #e02041;
-}
-
-.logon-container section.form form a:hover{
-    opacity: 0.8;
-}

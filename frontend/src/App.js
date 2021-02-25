@@ -1,12 +1,12 @@
 //JSX - JS com html
 
-import Logon from './pages/logon'
+import Routes from './routes'
 
 import './global.css'
 
 function App() {
   return (
-    <Logon/>
+    <Routes/>
   );
 }
 
